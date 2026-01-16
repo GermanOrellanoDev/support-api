@@ -31,3 +31,28 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Additional ###
+# Log files
+*.log
+logs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Traches
+ehthumbs.db
+Thumbs.db
+
+# Application properties with sensitive data
+application-local.properties
+application-prod.properties
+
+# Maven wrapper
+mvnw
+mvnw.cmd
+
+# Compiled files
+*.class
