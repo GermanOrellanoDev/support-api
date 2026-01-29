@@ -42,7 +42,7 @@ public class TicketService {
         return ticketRepository.findAll(pageable);
     }
 
-    public Page<Ticket> getAllByStatus(TicketStatus status, Pageable pageable) {
+    public Page<Ticket> getTicketsByStatus(TicketStatus status, Pageable pageable) {
         return ticketRepository.findByStatus(status, pageable);
     }
 
@@ -79,7 +79,7 @@ public class TicketService {
         return commentRepository.save(comment);
     }
 
-    public List<Comment> getTickComments(Long id) {
+    public List<Comment> getTicketComments(Long id) {
         getTicketById(id);
         return commentRepository.findByTicketIdOrderByCreatedAtDesc(id);
     }
